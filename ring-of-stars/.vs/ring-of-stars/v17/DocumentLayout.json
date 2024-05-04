@@ -3,7 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\Desktop\\01_hello_SDL\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Application.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Vladimir\\AppData\\Local\\Temp\\9a74f3ef-fde0-4d7c-aeea-c6d21d5d3b87_04_key_presses(1).zip.b87\\04_key_presses\\04_key_presses.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,20 +24,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Application.hpp",
+              "DocumentMoniker": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.hpp",
+              "RelativeDocumentMoniker": "Application.hpp",
+              "ToolTip": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.hpp",
+              "RelativeToolTip": "Application.hpp",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-04T21:59:51.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Application.cpp",
+              "DocumentMoniker": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.cpp",
+              "RelativeDocumentMoniker": "Application.cpp",
+              "ToolTip": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.cpp",
+              "RelativeToolTip": "Application.cpp",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEQAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-04T21:58:21.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\Vladimir\\Desktop\\01_hello_SDL\\main.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\01_hello_SDL\\main.cpp",
               "ToolTip": "C:\\Users\\Vladimir\\Desktop\\01_hello_SDL\\main.cpp",
               "RelativeToolTip": "..\\..\\..\\Desktop\\01_hello_SDL\\main.cpp",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAADoAAAAAAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAYAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-04T21:26:03.29Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "04_key_presses.cpp",
+              "DocumentMoniker": "C:\\Users\\Vladimir\\AppData\\Local\\Temp\\9a74f3ef-fde0-4d7c-aeea-c6d21d5d3b87_04_key_presses(1).zip.b87\\04_key_presses\\04_key_presses.cpp",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\9a74f3ef-fde0-4d7c-aeea-c6d21d5d3b87_04_key_presses(1).zip.b87\\04_key_presses\\04_key_presses.cpp",
+              "ToolTip": "C:\\Users\\Vladimir\\AppData\\Local\\Temp\\9a74f3ef-fde0-4d7c-aeea-c6d21d5d3b87_04_key_presses(1).zip.b87\\04_key_presses\\04_key_presses.cpp [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\9a74f3ef-fde0-4d7c-aeea-c6d21d5d3b87_04_key_presses(1).zip.b87\\04_key_presses\\04_key_presses.cpp [Read Only]",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAAAMoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-04T21:42:50.903Z",
+              "EditorCaption": " [Read Only]"
             }
           ]
         }
