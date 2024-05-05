@@ -2,6 +2,7 @@
 
 #include <SDL.h>
 #include <iostream>
+#include "Bianka.hpp"
 
 class Application
 {
@@ -14,13 +15,9 @@ public:
     void draw();
 
 private:
-    SDL_Surface* m_image;
-    SDL_Rect     m_image_position;
+    Bianka m_bianka;
 
     SDL_Window*  m_window;
     SDL_Surface* m_window_surface;
-    SDL_Event    m_window_event;
-
-    double       m_image_x;
-    double       m_image_y;
+    SDL_Event    m_window_event;  
 };
