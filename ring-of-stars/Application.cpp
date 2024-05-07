@@ -1,15 +1,5 @@
 #include "Application.hpp"
 
-SDL_Surface* load_surface(char const* path)
-{
-    SDL_Surface* image_surface = SDL_LoadBMP(path);
-
-    if (!image_surface)
-        return 0;
-
-    return image_surface;
-}
-
 
 Application::Application()
 {
@@ -37,6 +27,9 @@ Application::Application()
         std::cout << "SDL2 Error: " << SDL_GetError() << "\n";
         return;
     }
+
+    m_bianka.init(m_window_surface);
+    m_enemy_1.init(m_window_surface);
 }
 
 Application::~Application()
@@ -79,6 +72,7 @@ void Application::draw()
     SDL_FillRect(m_window_surface, nullptr, SDL_MapRGB(m_window_surface->format, 0, 0, 0));
 
     m_bianka.draw(m_window_surface);
+    m_enemy_1.draw(m_window_surface);
 
     SDL_UpdateWindowSurface(m_window);
 }

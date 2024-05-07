@@ -1,7 +1,2 @@
-﻿  main.cpp
-  Application.cpp
-  Bianka.cpp
-  Generating Code...
-C:\Users\Vladimir\source\repos\ring-of-stars\Bianka.cpp(38,20): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\Vladimir\source\repos\ring-of-stars\Bianka.cpp(39,20): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+﻿  Application.cpp
   ring-of-stars.vcxproj -> C:\Users\Vladimir\source\repos\ring-of-stars\x64\Debug\ring-of-stars.exe

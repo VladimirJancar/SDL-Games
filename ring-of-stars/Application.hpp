@@ -3,6 +3,7 @@
 #include <SDL.h>
 #include <iostream>
 #include "Bianka.hpp"
+#include "Enemy.hpp"
 
 class Application
 {
@@ -16,6 +17,7 @@ public:
 
 private:
     Bianka m_bianka;
+    Enemy m_enemy_1;
 
     SDL_Window*  m_window;
     SDL_Surface* m_window_surface;

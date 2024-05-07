@@ -22,10 +22,12 @@
     <ClCompile Include="..\..\..\Desktop\01_hello_SDL\main.cpp" />
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Bianka.cpp" />
+    <ClCompile Include="Enemy.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.hpp" />
     <ClInclude Include="Bianka.hpp" />
+    <ClInclude Include="Enemy.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
