@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Enemy.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Enemy.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Application.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Bianka.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -13,21 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Bianka.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Bianka.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Enemy.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Enemy.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|solutionrelative:Application.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A1D3B92-328B-4787-AE96-8A4DF71F3CF6}|ring-of-stars.vcxproj|C:\\Users\\Vladimir\\Desktop\\01_hello_SDL\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,11 +38,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Main.cpp",
+              "RelativeDocumentMoniker": "Main.cpp",
+              "ToolTip": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Main.cpp",
+              "RelativeToolTip": "Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-22T00:37:36.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Enemy.hpp",
               "DocumentMoniker": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Enemy.hpp",
               "RelativeDocumentMoniker": "Enemy.hpp",
@@ -54,33 +68,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Enemy.cpp",
               "DocumentMoniker": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Enemy.cpp",
               "RelativeDocumentMoniker": "Enemy.cpp",
               "ToolTip": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Enemy.cpp",
               "RelativeToolTip": "Enemy.cpp",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACgAAAAAAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-07T18:19:51.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T18:19:51.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Application.cpp",
               "DocumentMoniker": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.cpp",
               "RelativeDocumentMoniker": "Application.cpp",
               "ToolTip": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.cpp",
               "RelativeToolTip": "Application.cpp",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEYAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-04T21:58:21.889Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T21:58:21.889Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Application.hpp",
               "DocumentMoniker": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Application.hpp",
               "RelativeDocumentMoniker": "Application.hpp",
@@ -88,21 +100,7 @@
               "RelativeToolTip": "Application.hpp",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-04T21:59:51.713Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\Vladimir\\Desktop\\01_hello_SDL\\main.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\01_hello_SDL\\main.cpp",
-              "ToolTip": "C:\\Users\\Vladimir\\Desktop\\01_hello_SDL\\main.cpp",
-              "RelativeToolTip": "..\\..\\..\\Desktop\\01_hello_SDL\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-04T21:26:03.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-04T21:59:51.713Z"
             }
           ]
         },
@@ -112,20 +110,20 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Bianka.cpp",
               "DocumentMoniker": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Bianka.cpp",
               "RelativeDocumentMoniker": "Bianka.cpp",
               "ToolTip": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Bianka.cpp",
               "RelativeToolTip": "Bianka.cpp",
-              "ViewState": "AQIAABEAAAAAAAAAAAAiwBoAAAAaAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAABoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-05T10:12:30.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Bianka.hpp",
               "DocumentMoniker": "C:\\Users\\Vladimir\\source\\repos\\ring-of-stars\\Bianka.hpp",
               "RelativeDocumentMoniker": "Bianka.hpp",
@@ -133,8 +131,7 @@
               "RelativeToolTip": "Bianka.hpp",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-05T10:13:07.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T10:13:07.988Z"
             }
           ]
         }

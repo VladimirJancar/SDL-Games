@@ -19,10 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\Desktop\01_hello_SDL\main.cpp" />
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="Bianka.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.hpp" />
