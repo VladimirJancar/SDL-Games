@@ -19,8 +19,8 @@ protected:
     const int SCREEN_WIDTH = 1366;
     const int SCREEN_HEIGHT = 768;
 
-    SDL_Surface* m_image;
-    SDL_Rect     m_position;
+    SDL_Surface* image;
+    SDL_Rect     position;
 
     double velocity_x;
     double velocity_y;

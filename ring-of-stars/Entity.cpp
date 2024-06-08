@@ -2,41 +2,43 @@
 
 Entity::Entity()
 {
-    m_image = NULL;
+    image = NULL;
 
-    m_position.x = SCREEN_WIDTH / 2 - 32;
-    m_position.y = SCREEN_HEIGHT / 3;
-    m_position.w = 64;
-    m_position.h = 64;
+    position.x = SCREEN_WIDTH / 2 - 32;
+    position.y = SCREEN_HEIGHT / 3;
+    position.w = 64;
+    position.h = 64;
 
     velocity_x = 0.0;
     velocity_y = 0.0;
     speed = 1.0;
+
+    health = 100;
 }
 
 
 void Entity::update(double delta_time) // TODO implement getticks & deltatime
 {
-    m_position.x += velocity_x;
-    if (m_position.x < 0 || m_position.x + m_position.w > SCREEN_WIDTH)
-        m_position.x -= velocity_x;
+    position.x += velocity_x;
+    if (position.x < 0 || position.x + position.w > SCREEN_WIDTH)
+        position.x -= velocity_x;
 
-    m_position.y += velocity_y;
-    if (m_position.y < 0 || m_position.y + m_position.h > SCREEN_HEIGHT)
-        m_position.y -= velocity_y;
+    position.y += velocity_y;
+    if (position.y < 0 || position.y + position.h > SCREEN_HEIGHT)
+        position.y -= velocity_y;
 
 }
 
 
 void Entity::init(SDL_Surface* window_surface)
 {
-    m_image = loadSurface("assets/textures/bianka.bmp", window_surface);
+    image = loadSurface("assets/textures/bianka.bmp", window_surface);
 }
 
 
 void Entity::draw(SDL_Surface* window_surface)
 {
-    SDL_BlitScaled(m_image, nullptr, window_surface, &m_position);
+    SDL_BlitScaled(image, nullptr, window_surface, &position);
 }
 
 

@@ -2,16 +2,9 @@
 
 Bianka::Bianka():Entity()
 {
-    m_image = NULL;
+    position.y = SCREEN_HEIGHT / 3 * 2;
 
-    m_position.x = SCREEN_WIDTH/2 - 32;
-    m_position.y = SCREEN_HEIGHT/3;
-    m_position.w = 64;
-    m_position.h = 64;
-
-    velocity_x = 0.0;
-    velocity_y = 0.0;
-    speed = 1.0;
+    health = 100;
 
     last = 0;
     right = false;
@@ -32,13 +25,13 @@ void Bianka::update(double delta_time) // TODO implement getticks & deltatime
     else
         velocity_x = 0;
 
-    m_position.x += velocity_x;
-    if (m_position.x < 0 || m_position.x + m_position.w > SCREEN_WIDTH)
-        m_position.x -= velocity_x;
+    position.x += velocity_x;
+    if (position.x < 0 || position.x + position.w > SCREEN_WIDTH)
+        position.x -= velocity_x;
 
-    m_position.y += velocity_y;
-    if (m_position.y < 0 || m_position.y + m_position.h > SCREEN_HEIGHT)
-        m_position.y -= velocity_y;
+    position.y += velocity_y;
+    if (position.y < 0 || position.y + position.h > SCREEN_HEIGHT)
+        position.y -= velocity_y;
 
 }
 
