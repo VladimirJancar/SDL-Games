@@ -30,6 +30,8 @@ Application::Application()
 
     m_bianka.init(m_window_surface);
     m_enemy_1.init(m_window_surface);
+
+    //bullet->init(m_window_surface);
 }
 
 Application::~Application()
@@ -52,6 +54,13 @@ void Application::loop()
             case SDL_QUIT:
                 keep_window_open = false;
                 break;
+            case SDL_KEYDOWN:
+                switch (m_window_event.key.keysym.sym)
+                {
+                case SDLK_q:
+                    projectiles.push_back(new Projectile());
+                    break;
+                }
             }
         }
 
@@ -59,11 +68,28 @@ void Application::loop()
         update(1.0 / 60.0);
         draw();
     }
+
+    for (auto projectile : projectiles) {
+        delete projectile;
+    }
+    projectiles.clear();
 }
 
 void Application::update(double delta_time)
 {
+    for (auto it = projectiles.begin(); it != projectiles.end(); ) {
+        (*it)->update(delta_time);
+        if ((*it)->isOutOfBounds()) {
+            delete* it;
+            it = projectiles.erase(it);
+        }
+        else {
+            ++it;
+        }
+    }
     m_bianka.update(delta_time);
+    m_enemy_1.update(delta_time);
+
 }
 
 
@@ -74,6 +100,14 @@ void Application::draw()
     m_bianka.draw(m_window_surface);
     m_enemy_1.draw(m_window_surface);
 
+    for (const auto& projectile : projectiles) {
+        projectile->draw(m_window_surface);
+    }
     SDL_UpdateWindowSurface(m_window);
 }
 
+
+void Application::spawnProjectile() //TODO refactor and remove from this cpp fle 
+{
+
+}

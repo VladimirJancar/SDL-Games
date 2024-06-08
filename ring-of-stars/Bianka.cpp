@@ -32,7 +32,6 @@ void Bianka::update(double delta_time) // TODO implement getticks & deltatime
     position.y += velocity_y;
     if (position.y < 0 || position.y + position.h > SCREEN_HEIGHT)
         position.y -= velocity_y;
-
 }
 
 
