@@ -1,6 +1,6 @@
 #include "Bianka.hpp"
 
-Bianka::Bianka()
+Bianka::Bianka():Entity()
 {
     m_image = NULL;
 
@@ -43,41 +43,29 @@ void Bianka::update(double delta_time) // TODO implement getticks & deltatime
 }
 
 
-void Bianka::init(SDL_Surface* window_surface)
-{
-    m_image = loadSurface("assets/textures/bianka.bmp", window_surface);
-}
-
-
-void Bianka::draw(SDL_Surface* window_surface)
-{
-    SDL_BlitScaled(m_image, nullptr, window_surface, &m_position);
-}
-
-
 void Bianka::handleEvents(SDL_Event const& event)
 {
     if (event.type == SDL_KEYDOWN && event.key.repeat == 0)
     {
         switch (event.key.keysym.sym) {
-            case SDLK_w:
-                velocity_y -= speed;
-                break;
-            case SDLK_s:
-                velocity_y += speed;
-                break;
-            case SDLK_a:
-                last = 2;
-                left = true;
-                break;
-            case SDLK_d:
-                last = 4;
-                right = true;
-                break;
+        case SDLK_w:
+            velocity_y -= speed;
+            break;
+        case SDLK_s:
+            velocity_y += speed;
+            break;
+        case SDLK_a:
+            last = 2;
+            left = true;
+            break;
+        case SDLK_d:
+            last = 4;
+            right = true;
+            break;
         }
         //Uint8 const* keys = SDL_GetKeyboardState(nullptr);
 
-    } 
+    }
     else if (event.type == SDL_KEYUP && event.key.repeat == 0)
     {
         switch (event.key.keysym.sym) {
@@ -95,22 +83,4 @@ void Bianka::handleEvents(SDL_Event const& event)
             break;
         }
     }
-}
-
-
-SDL_Surface* Bianka::loadSurface(char const* path, SDL_Surface* window_surface)
-{
-    SDL_Surface* optimized_surface = NULL;
-    SDL_Surface* image_surface = SDL_LoadBMP(path);
-
-    if (!image_surface)
-        return 0;
- 
-    optimized_surface = SDL_ConvertSurface(image_surface, window_surface->format, 0);
-    SDL_FreeSurface(image_surface);
-
-    if (!optimized_surface)
-        return 0;
-
-    return optimized_surface;
 }

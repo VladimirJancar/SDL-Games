@@ -30,16 +30,22 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.hpp">
-      <Filter>include</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Bianka.hpp">
-      <Filter>include</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Enemy.hpp">
-      <Filter>include</Filter>
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
