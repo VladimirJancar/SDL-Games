@@ -58,7 +58,8 @@ void Application::loop()
                 switch (m_window_event.key.keysym.sym)
                 {
                 case SDLK_q:
-                    projectiles.push_back(new Projectile());
+                    m_bianka.attack(projectiles);
+                    //projectiles.push_back(new Projectile());
                     break;
                 }
             }

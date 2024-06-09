@@ -1,3 +1,4 @@
+#include <vector>
 #include "Bianka.hpp"
 
 Bianka::Bianka():Entity()
@@ -11,6 +12,10 @@ Bianka::Bianka():Entity()
     left = false;
 }
 
+void Bianka::attack(std::vector<Projectile*>& projectiles)
+{
+    projectiles.push_back(new Projectile());
+}
 
 void Bianka::update(double delta_time) // TODO implement getticks & deltatime
 {
