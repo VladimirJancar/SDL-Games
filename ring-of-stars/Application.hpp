@@ -22,7 +22,7 @@ public:
 private:
     Bianka m_bianka;
     Enemy m_enemy_1;
-    std::vector<Projectile*> projectiles;
+    
 
     SDL_Window*  m_window;
     SDL_Surface* m_window_surface;

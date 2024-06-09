@@ -1,12 +1,12 @@
 #include "Projectile.hpp"
 
-Projectile::Projectile()
+Projectile::Projectile(int x, int y)
 {
-    surface = SDL_CreateRGBSurface(0, 20, 20, 32, 0x00FF0000, 0x0000FF00, 0x000000FF, 0xFF000000);
+    surface = SDL_CreateRGBSurface(0, 15, 15, 32, 0x00FF0000, 0x0000FF00, 0x000000FF, 0xFF000000);
     SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 255, 255, 255));
 
-    position.x = 10;
-    position.y = 10;
+    position.x = x;
+    position.y = y;
     position.w = surface->w;
     position.h = surface->h;
 
@@ -20,7 +20,7 @@ Projectile::~Projectile() {
 
 void Projectile::update(double delta_time) 
 {
-    position.x += speed; // Move the projectile horizontally
+    position.y -= speed; // Move the projectile horizontally
 }
 
 void Projectile::draw(SDL_Surface* window_surface) 

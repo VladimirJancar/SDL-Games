@@ -5,7 +5,7 @@
 class Projectile
 {
 public:
-    Projectile();
+    Projectile(int x, int y);
     ~Projectile();
 
     void update(double delta_time);

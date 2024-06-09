@@ -10,9 +10,10 @@ public:
 
     virtual void update(double delta_time);
     virtual void handleEvents(SDL_Event const& event);
+    virtual void draw(SDL_Surface* window_surface);
 
     void init(SDL_Surface* window_surface);
-    void draw(SDL_Surface* window_surface);
+    
     SDL_Surface* loadSurface(char const* path, SDL_Surface* window_surface);
 
 protected:

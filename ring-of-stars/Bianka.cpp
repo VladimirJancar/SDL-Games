@@ -12,9 +12,9 @@ Bianka::Bianka():Entity()
     left = false;
 }
 
-void Bianka::attack(std::vector<Projectile*>& projectiles)
+void Bianka::attack()
 {
-    projectiles.push_back(new Projectile());
+    projectiles.push_back(new Projectile(position.x, position.y));
 }
 
 void Bianka::update(double delta_time) // TODO implement getticks & deltatime
@@ -37,11 +37,39 @@ void Bianka::update(double delta_time) // TODO implement getticks & deltatime
     position.y += velocity_y;
     if (position.y < 0 || position.y + position.h > SCREEN_HEIGHT)
         position.y -= velocity_y;
+
+
+    if (is_shooting) {
+        attack();
+    }
+
+    for (auto it = projectiles.begin(); it != projectiles.end(); ) {
+        (*it)->update(delta_time);
+        if ((*it)->isOutOfBounds()) {
+            delete* it;
+            it = projectiles.erase(it);
+        }
+        else {
+            ++it;
+        }
+    }
 }
 
+void Bianka::draw(SDL_Surface* window_surface)
+{
+    SDL_BlitScaled(image, nullptr, window_surface, &position);
+    
+    for (const auto& projectile : projectiles) {
+        projectile->draw(window_surface);
+    }
+}
 
 void Bianka::handleEvents(SDL_Event const& event)
 {
+    if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE) {
+        attack();
+    }
+
     if (event.type == SDL_KEYDOWN && event.key.repeat == 0)
     {
         switch (event.key.keysym.sym) {
@@ -58,6 +86,9 @@ void Bianka::handleEvents(SDL_Event const& event)
         case SDLK_d:
             last = 4;
             right = true;
+            break;       
+        case SDLK_SPACE:
+            is_shooting = true;
             break;
         }
         //Uint8 const* keys = SDL_GetKeyboardState(nullptr);
@@ -77,6 +108,9 @@ void Bianka::handleEvents(SDL_Event const& event)
             break;
         case SDLK_d:
             right = false;
+            break;
+        case SDLK_SPACE:
+            is_shooting = false;
             break;
         }
     }
