@@ -42,7 +42,7 @@ void Entity::draw(SDL_Surface* window_surface)
 }
 
 
-void Entity::handleEvents(SDL_Event const& event)
+void Entity::handleEvents(SDL_Event const& event, float delta_time)
 {
  
 }

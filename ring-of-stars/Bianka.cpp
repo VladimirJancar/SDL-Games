@@ -1,6 +1,8 @@
 #include <vector>
 #include "Bianka.hpp"
 
+#include <iostream>
+
 Bianka::Bianka():Entity()
 {
     position.y = SCREEN_HEIGHT / 3 * 2;
@@ -14,11 +16,13 @@ Bianka::Bianka():Entity()
 
 void Bianka::attack()
 {
-    projectiles.push_back(new Projectile(position.x, position.y));
+    projectiles.push_back(new Projectile(position.x + position.w/2 - 15/2, position.y));
 }
 
-void Bianka::update(double delta_time) // TODO implement getticks & deltatime
+void Bianka::update(double delta_time)
 {
+    std::cout << "delta time: " << delta_time << "\n";
+
     if (left && right && last == 2)
         velocity_x = -speed;
     else if (left && right && last == 4)
@@ -30,13 +34,13 @@ void Bianka::update(double delta_time) // TODO implement getticks & deltatime
     else
         velocity_x = 0;
 
-    position.x += velocity_x;
+    position.x += velocity_x * delta_time;
     if (position.x < 0 || position.x + position.w > SCREEN_WIDTH)
-        position.x -= velocity_x;
+        position.x -= velocity_x * delta_time;
 
-    position.y += velocity_y;
+    position.y += velocity_y * delta_time;
     if (position.y < 0 || position.y + position.h > SCREEN_HEIGHT)
-        position.y -= velocity_y;
+        position.y -= velocity_y * delta_time;
 
 
     if (is_shooting) {
@@ -64,7 +68,7 @@ void Bianka::draw(SDL_Surface* window_surface)
     }
 }
 
-void Bianka::handleEvents(SDL_Event const& event)
+void Bianka::handleEvents(SDL_Event const& event, float delta_time)
 {
     if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE) {
         attack();

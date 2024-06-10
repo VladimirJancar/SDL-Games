@@ -23,6 +23,9 @@ private:
     Bianka m_bianka;
     Enemy m_enemy_1;
     
+    Uint32 last_time = SDL_GetTicks();
+    Uint32 current_time = 0;
+    double delta_time = 0;
 
     SDL_Window*  m_window;
     SDL_Surface* m_window_surface;

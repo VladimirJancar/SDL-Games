@@ -31,6 +31,7 @@ Application::Application()
     m_bianka.init(m_window_surface);
     m_enemy_1.init(m_window_surface);
 
+    
     //bullet->init(m_window_surface);
 }
 
@@ -45,9 +46,13 @@ void Application::loop()
     bool keep_window_open = true;
     while (keep_window_open)
     {
+        current_time = SDL_GetTicks();
+        delta_time = (current_time - last_time);// / 1000.0f;
+        last_time = current_time;
+
         while (SDL_PollEvent(&m_window_event) > 0)
         {
-            m_bianka.handleEvents(m_window_event);
+            m_bianka.handleEvents(m_window_event, delta_time);
 
             switch (m_window_event.type)
             {
@@ -58,16 +63,14 @@ void Application::loop()
                 switch (m_window_event.key.keysym.sym)
                 {
                 case SDLK_q:
-                    m_bianka.attack();
-                    //m_bianka.attack(projectiles);
-                    //projectiles.push_back(new Projectile());
+                    //m_bianka.attack();
                     break;
                 }
             }
         }
 
 
-        update(1.0 / 60.0);
+        update(delta_time);
         draw();
     }
 

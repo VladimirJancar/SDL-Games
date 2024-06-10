@@ -12,7 +12,7 @@ public:
 
     void update(double delta_time) override;
     void draw(SDL_Surface* window_surface) override;
-    void handleEvents(SDL_Event const& event) override;
+    void handleEvents(SDL_Event const& event, float delta_time) override;
     void attack();
 
 private:
@@ -20,6 +20,9 @@ private:
     bool right;
     bool left;
     bool is_shooting = false;
+
+    double shoot_cooldown; // Cooldown timer for shooting
+    const double shoot_interval = 0.5; // Minimum time between shots in seconds
 
     std::vector<Projectile*> projectiles;
 };
