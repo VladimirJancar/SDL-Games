@@ -5,7 +5,7 @@
 class Projectile
 {
 public:
-    Projectile(int x, int y);
+    Projectile(int x, int y, double vec_x, double vec_y);
     ~Projectile();
 
     void update(double delta_time);
@@ -21,7 +21,15 @@ private:
     SDL_Surface* surface;
     SDL_Rect     position;
 
+    int initial_x;
+    int initial_y;
+
     double velocity_x;
     double velocity_y;
     double speed;
+
+    double radius;
+    double angle;
+
+    double time = 0.0;
 };
