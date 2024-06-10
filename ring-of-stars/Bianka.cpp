@@ -16,12 +16,18 @@ Bianka::Bianka():Entity()
 
 void Bianka::attack()
 {
-    projectiles.push_back(new Projectile(position.x + position.w/2 - 15/2, position.y));
+    if (shoot_cooldown <= 0.0) {
+        projectiles.push_back(new Projectile(position.x + position.w / 2 - 15 / 2, position.y));
+        shoot_cooldown = shoot_interval;
+    }
 }
 
 void Bianka::update(double delta_time)
 {
-    std::cout << "delta time: " << delta_time << "\n";
+    //std::cout << "delta time: " << delta_time << "\n";
+    if (shoot_cooldown > 0.0) {
+        shoot_cooldown -= delta_time;
+    }
 
     if (left && right && last == 2)
         velocity_x = -speed;

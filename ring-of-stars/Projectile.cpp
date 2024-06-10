@@ -20,7 +20,7 @@ Projectile::~Projectile() {
 
 void Projectile::update(double delta_time) 
 {
-    position.y -= speed; // Move the projectile horizontally
+    position.y -= speed * delta_time; // Move the projectile horizontally
 }
 
 void Projectile::draw(SDL_Surface* window_surface) 

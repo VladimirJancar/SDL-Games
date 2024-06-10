@@ -22,7 +22,7 @@ private:
     bool is_shooting = false;
 
     double shoot_cooldown; // Cooldown timer for shooting
-    const double shoot_interval = 0.5; // Minimum time between shots in seconds
+    double shoot_interval = 50.0; // Minimum time between shots in seconds
 
     std::vector<Projectile*> projectiles;
 };
