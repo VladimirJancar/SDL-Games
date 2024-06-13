@@ -1,7 +1,9 @@
 #include "Projectile.hpp"
 #include <cmath>
 
-Projectile::Projectile(int x, int y, double vec_x, double vec_y)
+#include <iostream>
+
+Projectile::Projectile(int x, int y, double angle)
 {
     surface = SDL_CreateRGBSurface(0, 15, 15, 32, 0x00FF0000, 0x0000FF00, 0x000000FF, 0xFF000000);
     SDL_FillRect(surface, NULL, SDL_MapRGB(surface->format, 255, 255, 255));
@@ -11,11 +13,12 @@ Projectile::Projectile(int x, int y, double vec_x, double vec_y)
     position.w = surface->w;
     position.h = surface->h;
 
-    vec_x = vec_x;
-    vec_y = vec_y;
-
     initial_x = x;
     initial_y = y;
+
+
+    radius = 10.0;
+    
 
     speed = 0.5;
 }
@@ -27,12 +30,17 @@ Projectile::~Projectile() {
 
 void Projectile::update(double delta_time) 
 {
-    time += delta_time / 100.0;
+    time += delta_time / 10000.0;
 
-    radius += 2 * delta_time; // Increase the radius over time (speed of spiral expansion)
-    angle += 2 * M_PI * delta_time; // Increase the angle over time (speed of rotation)
-    position.x = initial_x + radius * std::cos(angle);
-    position.y = initial_y + radius * std::sin(angle);
+    position.x = (initial_x + radius * std::cos(angle));
+    position.y = (initial_y + radius * std::sin(angle));
+
+    if (angle >= M_PI * 2)
+        angle = 0.0;
+
+    cout << "angle" << angle << "\n";
+    angle += 0.001 * delta_time;
+    radius += 0.1 * delta_time + time;
 }
 
 void Projectile::draw(SDL_Surface* window_surface) 
