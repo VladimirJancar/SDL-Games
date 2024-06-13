@@ -17,10 +17,12 @@ Bianka::Bianka():Entity()
 void Bianka::attack()
 {
     if (shoot_cooldown <= 0.0) {
-        projectiles.push_back(new Projectile(position.x, position.y, 1.0));
-        projectiles.push_back(new Projectile(position.x, position.y + 32, 1.0));
-        projectiles.push_back(new Projectile(position.x + position.w/2, position.y, 6.0));
-        projectiles.push_back(new Projectile(position.x + position.w/2, position.y + 32, 3.0));
+        projectiles.push_back(new Projectile(position.x + 32, position.y + 32, 1.0));
+        projectiles.push_back(new Projectile(position.x + 32, position.y + 32, 2.0));
+        projectiles.push_back(new Projectile(position.x + 32, position.y + 32, 3.0));
+        projectiles.push_back(new Projectile(position.x + 32, position.y + 32, 4.0));
+        projectiles.push_back(new Projectile(position.x + 32, position.y + 32, 5.0));
+        projectiles.push_back(new Projectile(position.x + 32, position.y + 32, 6.0));
         shoot_cooldown = shoot_interval;
     }
 }
