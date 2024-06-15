@@ -15,7 +15,7 @@ enum class ProjectileType {
 class Projectile
 {
 public:
-    Projectile(int x, int y, double angle, ProjectileType type);
+    Projectile(int x, int y, int angle, ProjectileType type);
     ~Projectile();
 
     void update(double delta_time);
@@ -28,11 +28,11 @@ private:
 
     int initial_x;
     int initial_y;
-    int vel_x;
-    int vel_y;
+    double vel_x;
+    double vel_y;
 
     double radius;
-    double angle; // Radians
+    int angle; // Radians
     double time;
 
     ProjectileType type;

@@ -1,5 +1,6 @@
 #include "Application.hpp"
 
+const int FRAME_DELAY = 1000 / 120; //FPS
 
 Application::Application()
 {
@@ -47,7 +48,7 @@ void Application::loop()
     while (keep_window_open)
     {
         current_time = SDL_GetTicks();
-        delta_time = (current_time - last_time);// / 1000.0f;
+        delta_time = (current_time - last_time);// / 10.0;
         last_time = current_time;
 
         while (SDL_PollEvent(&m_window_event) > 0)
@@ -72,6 +73,11 @@ void Application::loop()
 
         update(delta_time);
         draw();
+
+        Uint32 frame_time = SDL_GetTicks() - current_time;
+        if (frame_time < FRAME_DELAY) {
+            SDL_Delay(FRAME_DELAY - frame_time);
+        }
     }
 
 
