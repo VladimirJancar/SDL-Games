@@ -21,6 +21,8 @@ public:
     void update(double delta_time);
     void draw(SDL_Surface* window_surface);
     bool isOutOfBounds();
+    int getX();
+    int getY();
 
 private:
     SDL_Surface* surface;
@@ -31,8 +33,8 @@ private:
     double vel_x;
     double vel_y;
 
-    double radius;
     int angle; // Radians
+    double radius;
     double time;
 
     ProjectileType type;

@@ -1,7 +1,4 @@
-#include <vector>
 #include "Bianka.hpp"
-
-#include <iostream>
 
 Bianka::Bianka():Entity()
 {
@@ -31,7 +28,7 @@ void Bianka::attack()
     }
 }
 
-void Bianka::update(double delta_time)
+void Bianka::update(double delta_time, Entity& enemy)
 {
     //std::cout << "delta time: " << delta_time << "\n";
     if (shoot_cooldown > 0.0) {
@@ -67,6 +64,11 @@ void Bianka::update(double delta_time)
         if ((*it)->isOutOfBounds()) {
             delete* it;
             it = projectiles.erase(it);
+        }
+        else if (enemy.wasHit((*it)->getX(), (*it)->getY())) {
+            delete* it;
+            it = projectiles.erase(it);
+            std::cout << "HIT\n";
         }
         else {
             ++it;

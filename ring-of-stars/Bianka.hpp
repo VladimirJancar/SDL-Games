@@ -1,6 +1,10 @@
 #pragma once
 
+#include <iostream>
+#include <vector>
 #include <SDL.h>
+
+#include "Enemy.hpp"
 #include "Entity.hpp"
 #include "Projectile.hpp"
 
@@ -10,7 +14,7 @@ public:
     Bianka();
     ~Bianka() = default;
 
-    void update(double delta_time) override;
+    void update(double delta_time, Entity& enemy) override;
     void draw(SDL_Surface* window_surface) override;
     void handleEvents(SDL_Event const& event, float delta_time) override;
     void attack();

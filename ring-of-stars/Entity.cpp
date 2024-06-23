@@ -1,5 +1,8 @@
 #include "Entity.hpp"
 
+const int PROJ_SIZE = 15; //TODO config
+const int ENTITY_SIZE = 64;
+
 Entity::Entity()
 {
     image = NULL;
@@ -17,7 +20,7 @@ Entity::Entity()
 }
 
 
-void Entity::update(double delta_time) // TODO implement getticks & deltatime
+void Entity::update(double delta_time, Entity& entity) // TODO implement getticks & deltatime
 {
     position.x += velocity_x;
     if (position.x < 0 || position.x + position.w > SCREEN_WIDTH)
@@ -27,6 +30,13 @@ void Entity::update(double delta_time) // TODO implement getticks & deltatime
     if (position.y < 0 || position.y + position.h > SCREEN_HEIGHT)
         position.y -= velocity_y;
 
+}
+
+
+bool Entity::wasHit(int proj_x, int proj_y)
+{
+    return (proj_x + PROJ_SIZE >= position.x && proj_x < position.x + ENTITY_SIZE &&
+        proj_y + PROJ_SIZE >= position.y && proj_y < position.y + ENTITY_SIZE);
 }
 
 

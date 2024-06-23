@@ -2,6 +2,12 @@
 
 const int FRAME_DELAY = 1000 / 120; //FPS
 
+/* TODO
+- playhitbox + detection
+- health
+- config file (screen dimensions, entity sizes, proj. sizes)
+*/
+
 Application::Application()
 {
 	const int SCREEN_WIDTH = 1366;
@@ -89,7 +95,7 @@ void Application::loop()
 
 void Application::update(double delta_time)
 {   
-    m_bianka.update(delta_time);
+    m_bianka.update(delta_time, m_enemy_1);
     m_enemy_1.update(delta_time);
 }
 
