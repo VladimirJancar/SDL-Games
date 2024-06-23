@@ -40,6 +40,12 @@ bool Entity::wasHit(int proj_x, int proj_y)
 }
 
 
+void Entity::takeDamage(int dmg)
+{
+    health -= dmg;
+}
+
+
 void Entity::init(SDL_Surface* window_surface)
 {
     image = loadSurface("assets/textures/bianka.bmp", window_surface);

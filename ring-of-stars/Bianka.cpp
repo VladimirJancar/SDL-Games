@@ -5,6 +5,7 @@ Bianka::Bianka():Entity()
     position.y = SCREEN_HEIGHT / 3 * 2;
 
     health = 100;
+    m_damage = 10;
 
     last = 0;
     right = false;
@@ -68,7 +69,7 @@ void Bianka::update(double delta_time, Entity& enemy)
         else if (enemy.wasHit((*it)->getX(), (*it)->getY())) {
             delete* it;
             it = projectiles.erase(it);
-            std::cout << "HIT\n";
+            enemy.takeDamage(m_damage);
         }
         else {
             ++it;

@@ -13,6 +13,7 @@ public:
     virtual void draw(SDL_Surface* window_surface);
 
     bool wasHit(int proj_x, int proj_y);
+    void takeDamage(int dmg);
     void init(SDL_Surface* window_surface);
     
     SDL_Surface* loadSurface(char const* path, SDL_Surface* window_surface);
@@ -28,5 +29,6 @@ protected:
     double velocity_y;
     double speed;
 
+    int m_damage;
     int health;
 };

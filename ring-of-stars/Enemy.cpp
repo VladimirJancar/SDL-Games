@@ -1,5 +1,6 @@
 #include "Enemy.hpp"
 
+
 Enemy::Enemy():Entity()
 {
     health = 1000;
@@ -7,6 +8,11 @@ Enemy::Enemy():Entity()
 
 void Enemy::update(double delta_time) // TODO implement getticks & deltatime
 {
+    if (health <= 0)
+        std::cout << "DEAD!\n";
+    else
+        std::cout << health << "\n";
+
     position.x += velocity_x;
     if (position.x < 0 || position.x + position.w > SCREEN_WIDTH)
         position.x -= velocity_x;
