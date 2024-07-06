@@ -1,0 +1,1 @@
+This project is being developed mainly for learning purposes. I'm trying to create a fun game, but also improve my C++ object-oriented programming skill which means I'm usually experimenting. This code is therefore messy and often far from efficient.
