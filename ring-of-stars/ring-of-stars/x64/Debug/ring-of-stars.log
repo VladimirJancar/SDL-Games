@@ -1,3 +1,0 @@
-﻿  Entity.cpp
-Entity.obj : error LNK2001: unresolved external symbol "public: virtual void __cdecl Entity::update(double)" (?update@Entity@@UEAAXN@Z)
-C:\Users\Vladimir\source\repos\ring-of-stars\x64\Debug\ring-of-stars.exe : fatal error LNK1120: 1 unresolved externals

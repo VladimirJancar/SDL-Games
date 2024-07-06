@@ -1,0 +1,20 @@
+﻿  Application.cpp
+C:\Users\Vladimir\source\repos\ring-of-stars\Application.cpp(62,51): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Bianka.cpp
+C:\Users\Vladimir\source\repos\ring-of-stars\Bianka.cpp(50,30): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Vladimir\source\repos\ring-of-stars\Bianka.cpp(52,34): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Vladimir\source\repos\ring-of-stars\Bianka.cpp(54,30): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Vladimir\source\repos\ring-of-stars\Bianka.cpp(56,34): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+  Enemy.cpp
+C:\Users\Vladimir\source\repos\ring-of-stars\Enemy.cpp(16,19): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Vladimir\source\repos\ring-of-stars\Enemy.cpp(18,23): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Vladimir\source\repos\ring-of-stars\Enemy.cpp(20,19): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Vladimir\source\repos\ring-of-stars\Enemy.cpp(22,23): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+  Entity.cpp
+C:\Users\Vladimir\source\repos\ring-of-stars\Entity.cpp(25,19): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Vladimir\source\repos\ring-of-stars\Entity.cpp(27,23): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Vladimir\source\repos\ring-of-stars\Entity.cpp(29,19): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Vladimir\source\repos\ring-of-stars\Entity.cpp(31,23): warning C4244: '-=': conversion from 'double' to 'int', possible loss of data
+  Main.cpp
+  Generating Code...
+  ring-of-stars.vcxproj -> C:\Users\Vladimir\source\repos\ring-of-stars\x64\Debug\ring-of-stars.exe
